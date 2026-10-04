@@ -35,6 +35,14 @@ scroll to **Security** and click **Open Anyway**. You only do this once.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 0.1.1
+
+- A calmer canvas: flat device tiles, a green edge while a device runs, small neutral tags.
+- Plain icons in the palette and simpler status labels.
+- Packet Flow respects Reduce Motion: packets fade in place instead of travelling.
+- A FortiGate's panel shows exactly where port1 is cabled, and can move it to the Internet cloud.
+- A second FortiGate in another lab gets its own web and SSH ports.
+
 ## Your first lab in five minutes
 
 1. **Images → Starter images → Alpine Linux PC**, install.
