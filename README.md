@@ -141,7 +141,8 @@ and CPU and memory meters.
 
 ## Uninstall
 
-Quit Patchyard, then delete the app and its data:
+Stop the lab engine (the stop button next to **Lab engine** at the bottom of
+the sidebar), quit Patchyard, then delete the app and its data:
 
 ```
 rm -rf /Applications/Patchyard.app "$HOME/Library/Application Support/Patchyard"
