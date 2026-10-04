@@ -155,6 +155,9 @@ first.
 
 **Is it free?** Yes, completely.
 
+**Is the source code available?** Not at the moment. The app is free to use,
+and the download page is where releases and updates are published.
+
 **Does it work on Intel Macs?** No. Patchyard needs Apple Silicon.
 
 **Can I run x86 images like Cisco Catalyst 8000V or Palo Alto?** Yes, under
