@@ -38,13 +38,12 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
-## What's new in 0.1.1
+## What's new in 0.1.2
 
-- A calmer canvas: flat device tiles, a green edge while a device runs, small neutral tags.
-- Plain icons in the palette and simpler status labels.
-- Packet Flow respects Reduce Motion: packets fade in place instead of travelling.
-- A FortiGate's panel shows exactly where port1 is cabled, and can move it to the Internet cloud.
-- A second FortiGate in another lab gets its own web and SSH ports.
+- Setup tells you what went wrong in plain words (no internet, low disk space, a damaged download) and resumes a cut-off download.
+- After an update, the lab engine switches to the new version by itself once no device is running.
+- Clearer Docker import messages, and long pulls no longer stall.
+- A simpler Welcome screen.
 
 ## Your first lab in five minutes
 
@@ -174,6 +173,11 @@ Docker.
 **A FortiGate says "License invalid".** The image has no licence yet. Connect
 port1 to an Internet cloud and request a trial in the FortiGate interface, or
 upload your licence file.
+
+**Setting up the lab engine fails.** The message says why. If it mentions
+the internet, connect and click **Set Up Lab Engine** again: the download
+continues where it stopped. The first start of the engine also downloads QEMU,
+which can take several minutes on a slow connection.
 
 **Something else does not work.** Please
 [open an issue](https://github.com/Jalwan0x/Patchyard/issues) with what you did,
