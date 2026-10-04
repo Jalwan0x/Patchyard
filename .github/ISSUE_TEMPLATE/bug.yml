@@ -1,0 +1,24 @@
+name: Something doesn't work
+description: A device won't start, a page won't open, the app misbehaves
+body:
+  - type: textarea
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Mac and macOS
+      placeholder: e.g. MacBook Air M2, macOS 15.3
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Device image
+      placeholder: e.g. FortiGate 7.6 ARM64, Ubuntu container, Cisco IOL
+  - type: textarea
+    attributes:
+      label: Console output or log
+      description: The device's console, or the Log tab at the bottom of the window. Paste text, not screenshots, where you can.
+      render: text
