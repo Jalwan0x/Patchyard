@@ -2,7 +2,7 @@
 
 **Network labs on your Mac, with real devices.**
 
-[![Download](https://img.shields.io/github/v/release/Jalwan0x/Patchyard-releases?label=download&color=8a4fff)](https://github.com/Jalwan0x/Patchyard-releases/releases/latest)
+[![Download](https://img.shields.io/github/v/release/Jalwan0x/Patchyard?label=download&color=8a4fff)](https://github.com/Jalwan0x/Patchyard/releases/latest)
 ![macOS 15+](https://img.shields.io/badge/macOS-15%2B-black?logo=apple)
 ![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-M1%20to%20M4-black)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jalwan)
@@ -23,9 +23,9 @@ homelab without spare hardware.
 ## Download
 
 Get the latest version from the
-[Releases page](https://github.com/Jalwan0x/Patchyard-releases/releases/latest), unzip
+[Releases page](https://github.com/Jalwan0x/Patchyard/releases/latest), unzip
 it and move **Patchyard** to Applications. The step-by-step
-[guide](https://github.com/Jalwan0x/Patchyard-releases/releases/latest) is attached to
+[guide](https://github.com/Jalwan0x/Patchyard/releases/latest) is attached to
 each release.
 
 The app is not signed by Apple yet, so the first time macOS shows "Patchyard
@@ -139,7 +139,7 @@ port1 to an Internet cloud and request a trial in the FortiGate interface, or
 upload your licence file.
 
 **Something else does not work.** Please
-[open an issue](https://github.com/Jalwan0x/Patchyard-releases/issues) with what you did,
+[open an issue](https://github.com/Jalwan0x/Patchyard/issues) with what you did,
 what you expected and what happened. The device console and the Log tab
 usually show the cause.
 
