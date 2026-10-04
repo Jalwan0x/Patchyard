@@ -32,6 +32,9 @@ The app is not signed by Apple yet, so the first time macOS shows "Patchyard
 Not Opened". Click **Done**, open **System Settings → Privacy & Security**,
 scroll to **Security** and click **Open Anyway**. You only do this once.
 
+To check the download, compare its checksum with the `.sha256` file on the
+release page: `shasum -a 256 Patchyard-*.zip`.
+
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
@@ -124,6 +127,28 @@ and CPU and memory meters.
 - macOS 15 or later.
 - About 4 GB of free disk space, plus your images.
 - Docker Desktop, OrbStack or Colima, only if you want to import Docker images.
+
+## What it uses on your Mac
+
+- **CPU and memory:** the lab engine may use all but two CPU cores and up to
+  half your RAM (at most 12 GB). Memory is only taken as devices need it.
+  Change both in **Settings**.
+- **Disk:** the engine's disk grows as you use it, up to 64 GB. Your images
+  come on top of that.
+- **Network:** Patchyard downloads only from official sources: Debian (the
+  engine and its packages), Ubuntu and Alpine (starter images), and GNS3's
+  GitHub (Dynamips, only if you use it). It has no telemetry or analytics.
+
+## Uninstall
+
+Quit Patchyard, then delete the app and its data:
+
+```
+rm -rf /Applications/Patchyard.app "$HOME/Library/Application Support/Patchyard"
+```
+
+The second path holds your labs and images, so copy anything you want to keep
+first.
 
 ## Questions
 
