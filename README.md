@@ -38,6 +38,12 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 2.0.1
+
+- Importing an ISO such as TinyCore turns on a graphical screen, so **Display** works right away.
+- Plain names for the Display setting, and a hint when an image has no screen.
+- **Start Lab Engine** button when the engine is not running.
+
 ## What's new in 2.0.0
 
 - **Editing:** undo and redo for every change (⌘Z, ⇧⌘Z), and copy, cut, paste and duplicate for devices, cables, labels and boxes (⌘C, ⌘X, ⌘V, ⌘D), including between labs.
@@ -178,6 +184,10 @@ upload your licence file.
 the internet, connect and click **Set Up Lab Engine** again: the download
 continues where it stopped. The first start of the engine also downloads QEMU,
 which can take several minutes on a slow connection.
+
+**I imported an ISO and only see a text console.** Stop the device, open
+**Images**, select the image, click **Edit Template** and set **Display** to
+**Graphical screen**. Then use **Display** on the running device.
 
 **Something else does not work.** Please
 [open an issue](https://github.com/Jalwan0x/Patchyard/issues) with what you did,
