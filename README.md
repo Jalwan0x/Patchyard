@@ -38,6 +38,10 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 2.0.4
+
+- **Cisco vIOS:** the import dialog reads the packed `.tgz`, sets x86_64, and shows the port names for the number of interfaces you pick (router Gi0/0 to Gi0/9; L2 and L3 switches Gi0/0 to Gi0/15).
+
 ## What's new in 2.0.3
 
 - **Import:** Cisco vIOS and other packed VM images (`.tgz` or `.tar.gz`) import directly. The disk is taken out of the archive for you.
