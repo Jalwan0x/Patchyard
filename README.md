@@ -38,6 +38,12 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 2.0.2
+
+- Uses much less battery: the app checks the lab engine less often when it is in the background, and only redraws what changed.
+- Packet Flow stops animating once the last packet has arrived.
+- An idle lab engine stays idle.
+
 ## What's new in 2.0.1
 
 - Importing an ISO such as TinyCore turns on a graphical screen, so **Display** works right away.
