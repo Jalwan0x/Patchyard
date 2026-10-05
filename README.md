@@ -38,6 +38,11 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 2.0.3
+
+- **Import:** Cisco vIOS and other packed VM images (`.tgz` or `.tar.gz`) import directly. The disk is taken out of the archive for you.
+- A file that is only an archive, with no disk inside, is refused with a clear message.
+
 ## What's new in 2.0.2
 
 - Uses much less battery: the app checks the lab engine less often when it is in the background, and only redraws what changed.
