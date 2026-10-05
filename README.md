@@ -38,12 +38,12 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
-## What's new in 0.1.2
+## What's new in 2.0.0
 
-- Setup tells you what went wrong in plain words (no internet, low disk space, a damaged download) and resumes a cut-off download.
-- After an update, the lab engine switches to the new version by itself once no device is running.
-- Clearer Docker import messages, and long pulls no longer stall.
-- A simpler Welcome screen.
+- **Editing:** undo and redo for every change (⌘Z, ⇧⌘Z), and copy, cut, paste and duplicate for devices, cables, labels and boxes (⌘C, ⌘X, ⌘V, ⌘D), including between labs.
+- **Cables:** delay, jitter, loss and bandwidth on any cable, applied live. Unplug a cable without deleting it.
+- **Import:** open EVE-NG (`.unl`) and GNS3 (`.gns3`) labs from File → Import Lab…. Devices are matched to the images you have installed.
+- **Configs:** save a Cisco IOS or FortiGate config into the lab, and have it typed back in when the device starts on a fresh disk.
 
 ## Your first lab in five minutes
 
