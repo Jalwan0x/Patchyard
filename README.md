@@ -38,6 +38,14 @@ release page: `shasum -a 256 Patchyard-*.zip`.
 Then click **Set Up Lab Engine**: it downloads a small Linux system and
 prepares it, which takes about two minutes.
 
+## What's new in 2.1.0
+
+- **Cisco vIOS works properly:** traffic through vIOS routers is no longer lost, and a vIOS keeps its config after a stop and start. vIOS now uses an IDE disk; images imported with an earlier version are moved to it automatically. Each start takes about 5 minutes.
+- **Detect Ports:** Edit Template reads an image's port names from the device. Importing a Cisco vIOS reads its ports (Gi0/0 to Gi0/15) for you.
+- **Cisco port names:** devices use the image's own names (Et0/0, Se2/0, Gi0/0, Fa0/0), with no slot editing.
+- **Cisco IOL** starts in the lab engine, and an image that checks a license says so plainly.
+- Uses less battery: quitting Patchyard stops an idle lab engine.
+
 ## What's new in 2.0.4
 
 - **Cisco vIOS:** the import dialog reads the packed `.tgz`, sets x86_64, and shows the port names for the number of interfaces you pick (router Gi0/0 to Gi0/9; L2 and L3 switches Gi0/0 to Gi0/15).
@@ -109,13 +117,16 @@ they are plugged in.
   from your Mac at `https://localhost:8443`, and licence UUID support.
 - **Cisco IOL / IOU**: routers and Layer 2 switches, with Ethernet and serial
   ports (HDLC, PPP, Frame Relay).
+- **Cisco vIOS**: routers and L2 and L3 switches, with their port names read
+  from the device.
 - **Cisco Dynamips**: classic 7200, 3700, 3600 and 2600 routers.
 - **Palo Alto, Juniper vSRX, MikroTik, VyOS, Windows** templates, and any
   qcow2, vmdk, vhdx or ISO image.
 
 Patchyard does not include vendor images. You import the ones you are
-licensed to use. FortiGate has been tested with Fortinet's own images. Cisco
-IOL and Dynamips were tested with stand-in images, and the other templates
+licensed to use. FortiGate and the Cisco vIOS router have been tested with
+the vendors' own images. Cisco IOL and Dynamips were tested with stand-in
+images, and the other templates
 have not been tried with the vendors' images yet. If one does not boot,
 please open an issue.
 
