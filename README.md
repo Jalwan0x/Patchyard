@@ -41,6 +41,12 @@ prepares it, which takes about two minutes.
 ## What's new in 2.1.0
 
 - **Cisco vIOS works properly:** traffic through vIOS routers is no longer lost, and a vIOS keeps its config after a stop and start. vIOS now uses an IDE disk; images imported with an earlier version are moved to it automatically. Each start takes about 5 minutes.
+## What's new in 2.2.0
+
+- **Pause devices.** Save a running virtual machine to disk and resume it in seconds. A paused device uses no CPU. Use the **Pause** button next to Start and Stop on a device, or **Pause All** in the toolbar. When you start a paused device next time, it resumes in about a second, right where you left it.
+- **Faster Cisco cold start.** Cisco vIOS routers and switches now start in about 1.5 minutes instead of 2–4 minutes.
+
+## What's new in 2.1.0
 - **Detect Ports:** Edit Template reads an image's port names from the device. Importing a Cisco vIOS reads its ports (Gi0/0 to Gi0/15) for you.
 - **Cisco port names:** devices use the image's own names (Et0/0, Se2/0, Gi0/0, Fa0/0), with no slot editing.
 - **Cisco IOL** starts in the lab engine, and an image that checks a license says so plainly.
